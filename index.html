@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+ <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>岡山汽水工業ホームページ</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+        <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.slider').bxSlider({
+                        auto: true,
+                        pause: 5000,
+                    });
+                });
+        </script>
+
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navigation">
+                <ul class="main-nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">会社概要</a></li>
+                    <li><a href="index.html">事業内容</a></li>
+                    <li><a href="index.html">ボイラー整備</a></li>
+                    <li><a href="index.html">第一種圧力容器</a></li>
+                    <li><a href="index.html">水処理装置・薬品</a></li>
+                    <li><a href="index.html">化学洗浄</a></li>
+                    <li><a href="index.html">許可・登録等</a></li>
+            </nav>
+            
+            <h1>岡山汽水工業有限会社</h1>
+            <ul class="top-coment">
+                <li><p>ボイラー整備・据付配管工事</p></li>
+                <li><p>中国・四国トップレベルの整備・保守実績</p></li>
+            </ul>
+
+        </header>
+        <div class="wrapper">
+            <ul class="home-main">
+                <li>ボイラー整備（性能検査受験整備）、修理、据付配管</li>
+                <li>第一種圧力容器整備、修理、据付配管</li>
+                <li>水処理装置・薬品。据付配管</li>
+                <li>各種洗浄工事（科学洗浄、ジェット洗浄、）</li>
+                <li>ボイラー用清缶剤、脱酸素剤等薬品販売</li>
+                <li>指示薬及び純水販売</li>
+                <li>ボイラー・純水気・軟水器レンタル</li>
+                <li>産業廃棄物中間処理</li>
+             </ul>
+            <div class="slide-box">
+                <div class="slider">
+                    <img src="image/1.jpg" alt="">
+                    <img src="image/2.jpg" alt="">
+                    <img src="image/3.jpg" alt="">
+                    <img src="image/4.jpg" alt="">
+                    <img src="image/5.jpg" alt="">
+                    <img src="image/6.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="home-sub">
+            <img src="image/純水.jpg" alt="純水の写真">
+            <a href="index.html">
+            ※イオン交換樹脂（工業用純水）を販売しております。ご注文は、下記EメールまたはFAXにてお受けいたします。<br>
+            ご注文確定翌日に発送いたします）<br>
+            (20L/段ボール・送料別・コック付)
+            </a>
+        </div>    
+
+
+
+
+        <footer class="footer">
+        <div class="location-info">
+            <h3 class="subtitle">岡山汽水工業有限会社</h3>
+            <p>住所：岡山市北区番町1丁目4番13号<br>
+                Tel:086-223-3146<br>
+                Fax:086-223-3147<br>
+                Mail：<input id="copyTarget" type="text" value="kanri@kisui.biz" readonly>
+                <button onclick="copyToClipboard()">クリックでメールアドレスをコピー</button>
+            </p>
+        </div>
+        <div class="location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1640.6349482981097!2d133.9260813!3d34.6731371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554063eded3fad5%3A0xf7f91a09f4aa2067!2z44CSNzAwLTA4MTEg5bKh5bGx55yM5bKh5bGx5biC5YyX5Yy655Wq55S677yR5LiB55uu77yU4oiS77yR77yT!5e0!3m2!1sja!2sjp!4v1589203904747!5m2!1sja!2sjp" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        </footer>
+
+        <script>
+            function copyToClipboard() {
+                // コピー対象をJavaScript上で変数として定義する
+                var copyTarget = document.getElementById("copyTarget");
+    
+                // コピー対象のテキストを選択する
+                copyTarget.select();
+    
+                // 選択しているテキストをクリップボードにコピーする
+                document.execCommand("Copy");
+    
+                // コピーをお知らせする
+                alert("コピー完了いたしました");
+            }
+        </script>
+    </body>
+</html>
